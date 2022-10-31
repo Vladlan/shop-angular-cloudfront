@@ -7,7 +7,7 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./cart-shipping-form.component.scss'],
 })
 export class CartShippingFormComponent {
-  @Input() shippingInfo!: FormGroup;
+  @Input() shippingInfo: FormGroup = new FormGroup({});
 
   @Output() nextStep = new EventEmitter<void>();
 }
