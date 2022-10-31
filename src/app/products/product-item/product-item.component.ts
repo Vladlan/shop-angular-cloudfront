@@ -11,7 +11,7 @@ import { CartCountControlsComponent } from '../../core/cart-count-controls/cart-
   styleUrls: ['./product-item.component.scss'],
 })
 export class ProductItemComponent implements OnInit {
-  @Input() product!: Product;
+  @Input() product: Product = {} as Product;
   @Input() index!: number;
 
   @ViewChild('cartBtn', { static: false, read: ElementRef }) cartBtn:
